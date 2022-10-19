@@ -96,4 +96,14 @@ You are required to submit BOTH of the following for review:
 
 ---
 
+## How to download
+
+You can download manually or download using git:
+
+* git clone git@github.com:Xenon789/code-quiz.git
+
+* git clone https://github.com/Xenon789/code-quiz.git
+
+Github Pages URL: https://xenon789.github.io/code-quiz/
+
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
