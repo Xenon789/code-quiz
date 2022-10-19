@@ -49,10 +49,6 @@ var startBtn = document.getElementById('start');
 var initialsEl = document.getElementById('initials');
 var feedbackEl = document.getElementById('feedback');
 
-// sound effects
-var sfxRight = new Audio('assets/sfx/correct.wav');
-var sfxWrong = new Audio('assets/sfx/incorrect.wav');
-
 function startQuiz() {
   // hide start screen
   var startScreenEl = document.getElementById('start-screen');
@@ -116,13 +112,8 @@ function questionClick(event) {
     // display new time on page
     timerEl.textContent = time;
 
-    // play "wrong" sound effect
-    sfxWrong.play();
-
     feedbackEl.textContent = 'Wrong!';
   } else {
-    // play "right" sound effect
-    sfxRight.play();
 
     feedbackEl.textContent = 'Correct!';
   }
@@ -149,7 +140,7 @@ function quizEnd() {
   clearInterval(timerId);
 
   // show end screen
-  var endScreenEl = document.getElementById('end-screen');
+  var endScreenEl = document.getElementById('final-screen');
   endScreenEl.removeAttribute('class');
 
   // show final score
